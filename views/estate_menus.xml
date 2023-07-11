@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="estate_menu_root" name="Bienes raíces">
+        <menuitem id="estate_property_first_level_menu" name="Descripcion">
+             <!--aqui se llama la accion de estate_property_views_xml-->
+            <menuitem id="estate_property_menu_action" action="estate_property_action"/>
+            <menuitem id="property_type_menu_action" action="estate_property_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="property_type_view_form" model="ir.ui.view">
+        <field name="name">property.type.form</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <form string="Tipos de propiedas">
+                <sheet>
+                    <div class="oe_title">
+                        <div class="oe_edit_only">
+                            <label for="name"/>
+                        </div>
+                        <h1 class="mb32">
+                            <field name="name" class="mb16"/>
+                        </h1>
+                        <!-- <field name="active" invisible="1"/> -->
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="property_type_view_tree" model="ir.ui.view">
+        <field name="name">property.type.view.tree</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <tree string="Propiedades Inmobiliarias">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="property_type_action" model="ir.actions.act_window">
+        <field name="name">Tipos de inmobiliario</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="xml">
+            <p class="o_view_nocontent_smiling_face">
+                Agrega una nueva propiedad
+            </p>
+            <!-- <p>
+                utiliza .
+            </p>
+            <p>
+                Algunos ejemplos de razones de pérdida son: "No tenemos personal/capacidad", "Precio demasiado alto".
+            </p> -->
+        </field>
+    </record>
+</odoo>
