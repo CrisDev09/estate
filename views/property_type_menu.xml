@@ -3,7 +3,7 @@
     <menuitem id="estate_menu_root" name="Bienes raíces">
         <menuitem id="property_type_first_level_menu" name="Configuración">
              <!--aqui se llama la accion de estate_property_views_xml-->
-            <menuitem id="property_type_menu_action" action="property_type_action"/>
+            <menuitem id="property_type_menu_action" action="property_type_action" sequence="0"/>
         </menuitem>
     </menuitem>
 </odoo>

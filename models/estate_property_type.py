@@ -5,3 +5,7 @@ class EstatePropertyType(models.Model):
     _description = 'Tipo de mobiliario'
 
     name = fields.Char(string='Tipo', required=True)
+    _sql_constraints = [
+        ('name_unique', 'unique(name)',
+         'Ya existe un registro con el mismo nombre')
+    ]
